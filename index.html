@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FOR MY CUTIE BABY</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>I'm Truly Sorry</h1>
+    <p>A heartfelt apology in a playful comic style</p>
+  </header>
+  
+  <main>
+    <!-- Section that will change on button click -->
+    <section class="section letter" id="letterSection">
+      <h2>A Letter to You</h2>
+      <p>Dear dwiti,</p>
+      <p>paragraph here</p>
+      <p>With all my heart,<br>abhii.</p>
+      <button class="btn-next" onclick="nextLetter()">Next</button>
+    </section>
+
+    <!-- Section for the 4th page with song -->
+    <section class="section song-box" id="songSection" style="display: none;">
+      <h2>Special Song for You</h2>
+      <button class="btn-play" onclick="playMusic()">Play Music</button>
+      <div id="musicPlayer" style="display: none;">
+        <audio controls>
+          <!-- Replace with your desired song URL -->
+          <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mp3">
+          Your browser does not support the audio element.
+        </audio>
+        <button class="btn-next" onclick="nextLetter()">Next</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
