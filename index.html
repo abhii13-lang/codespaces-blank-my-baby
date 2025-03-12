@@ -25,15 +25,8 @@
     <!-- Section for the 4th page with song -->
     <section class="section song-box" id="songSection" style="display: none;">
       <h2>Special Song for You</h2>
-      <button class="btn-play" onclick="playMusic()">Play Music</button>
-      <div id="musicPlayer" style="display: none;">
-        <audio controls>
-          <!-- Replace with your desired song URL -->
-          <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mp3">
-          Your browser does not support the audio element.
-        </audio>
-        <button class="btn-next" onclick="nextLetter()">Next</button>
-      </div>
+      <button class="btn-play" id="play-btn" onclick="playMusic()">Play Music</button>
+        <button class="btn-next" onclick="nextLetter()" style="display: none;" id="btn-next-songSection">Next</button>
     </section>
   </main>
 

@@ -61,10 +61,12 @@ const letters = [
       <button class="btn-next" onclick="nextLetter()">Next</button>
     `;
   }
-  
+  const song = new Audio("https://mobcup.com.co/d?n=Blue%20Yung%20Kai%20Instrumental%20Ringtone%20Download&f=a5lr4fuv5n0fjz46lz9k5p6z9f6phmquo&t=mp3") 
   // Function to handle the Play Music button
-  function playMusic() {
-    const musicPlayer = document.getElementById("musicPlayer");
-    musicPlayer.style.display = "block"; // Show the music player
+  function playMusic() { // Show the music player
+    document.getElementById('play-btn').style.display = "none";
+    document.getElementById("btn-next-songSection").style.display = "block";
+    song.loop = true
+    song.play().catch(err => { console.log(err)})
   }
   
